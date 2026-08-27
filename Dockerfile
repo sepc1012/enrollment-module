@@ -1,6 +1,7 @@
 FROM php:8.3-fpm-alpine
 
-RUN apk add --no-linux-headers --no-cache \
+RUN apk add --no-cache \
+    linux-headers \
     libpq-dev \
     libpng-dev \
     libzip-dev \
